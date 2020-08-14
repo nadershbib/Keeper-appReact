@@ -37,7 +37,7 @@ function CreateArea(props) {
 
   return (
     <div>
-      <form className="create-note">
+      <form className="create-note" onSubmit={submitNote}>
         {isExpanded && (
           <input
             name="title"
